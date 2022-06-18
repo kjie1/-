@@ -1,0 +1,144 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+.wrapper{
+    background:#eee;
+}
+
+a{
+    text-decoration:none;
+    color:#b3bcc5;
+}
+.header{
+    height:70px;
+    background:#354457;
+    line-height:70px;
+    color:#b3bcc5;
+    font-size:14px;
+}
+.logo{
+    width:30px;
+    height:30px;
+    vertical-align:middle;
+    margin-left:20px;
+}
+
+.left-menu{
+    width:200px;
+    height:calc(100vh - 70px);
+    background:#4d5e70;
+    color:#b3bcc5;
+    line-height:40px;
+}
+
+
+.left-menu dt{
+    padding-left:10px;
+}
+/* .left-menu dd{
+    
+} */
+.left-menu dd a{
+    width:100%;
+    padding-left:40px;
+    display: block;
+}
+
+.right-content{
+    width:calc(100vw - 200px);
+    height:calc(100vh - 70px);
+    overflow:hidden;
+    position:absolute;
+    /* float: left; */
+    left:200px;
+    top:70px;
+}
+#student-list{
+    height:100%;
+    overflow-y:scroll;
+}
+#student-add{
+    height:100%;
+}
+dd.menu-active{
+    background:#ddd;
+    color:#354457;
+}
+dd.menu-active a{
+    color:#354457;
+}
+
+form{
+    width:400px;
+    margin:0 auto;
+    padding-top:20px;
+}
+form label:not(.sex){
+    width:100px;
+    display: inline-block;
+    text-align:right;
+    margin-right:10px;
+}
+form div{
+    margin-bottom:10px;
+}
+
+form .btn{
+    padding:5px 24px;
+    cursor: pointer;
+}
+
+#student-list table{
+    width:100%;
+    text-align: center;
+    line-height:30px;
+    font-size:14px;
+}
+#student-list table thead{
+    background: #e3e3e3;
+    color:#646987;
+}
+#student-list table tbody{
+    background:#fff;
+}
+
+#student-list table .operation-btn{
+    padding:5px 10px;
+    border:none;
+    outline: none;
+    color:#fff;
+    cursor: pointer;
+}
+#student-list table .edit{
+    background:#5cb85c;
+}
+
+#student-list table .remove{
+    background:#d9534f;
+}
+
+.modal{
+    position: fixed;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    background-color:rgba(0, 0, 0, 0.5);
+    display:none;
+}
+
+.modal-content{
+    position: absolute;
+    left:0;
+    top:0;
+    bottom:0;
+    right:0;
+    width:400px;
+    height:400px;
+    background-color:#fff;
+    margin:auto;
+    padding:20px;
+    
+}
